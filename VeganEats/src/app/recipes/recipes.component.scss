@@ -1,0 +1,29 @@
+.def-card {
+        border: 1px solid black ;
+        width: 10%;
+        display: inline-block;
+        cursor: pointer;
+    
+        img {
+            height: 50px;
+            width: auto;
+        }
+}
+
+.card {
+    border: 1px solid black ;
+    width: 10%;
+    display: inline-block;
+    cursor: pointer;
+
+
+    img {
+        height: 50px;
+        width: auto;
+    }
+}
+
+
+.hidden {
+    display: none;
+}

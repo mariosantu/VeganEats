@@ -1,1 +1,82 @@
 @import "../../styles/variables";
+
+
+header {
+    width: 95%;
+    margin: auto;
+
+    p {
+        display: inline-block;
+        padding: 5px 5px;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        // to delete
+        // background-color: $primary-color;
+
+        .logo-image {
+            display: flex;
+            align-items: center;
+
+            h1 {
+
+                padding-left: 10px;
+
+                .veg {
+                    color: $primary-color;
+                }
+
+                .eats {
+                    color: $third-color;
+                }
+            }
+        }
+
+        embed {
+            height: 90px;
+            width: auto;
+        }
+
+
+        .links-container {
+
+            padding-right: 290px;
+             
+            ul {
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    padding: 5px 5px;
+
+                    a {
+                        text-decoration: none;
+                        color: $primary-color;
+                        border-bottom: 3px solid $primary-color;
+                        font-size: 20px;
+                        font-weight: bold;
+
+                        i {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .burger-menu-container {
+
+            i {
+                // to transform in mobile
+                display: none;
+                cursor: pointer;
+                color: $primary-color;
+
+            }
+        }
+    }
+}

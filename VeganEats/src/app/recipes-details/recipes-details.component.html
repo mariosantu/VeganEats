@@ -1,1 +1,18 @@
-<p>recipes-details works!</p>
+<app-header></app-header>
+
+<a routerLink="/">Home</a>
+<p>details</p>
+
+<div>
+    <p>title = {{title}}</p>
+    <p>PreparationTime = {{preparationTime}}</p>
+    <p>pic = <img src="{{pic}}"></p>
+    <p [innerHTML]="sum"></p>
+    <p [innerHTML]="directives"></p>
+
+    <p>ingridients = </p>
+    <div *ngFor="let ingridient of ingridients">
+        <p>{{ingridient.name}}</p>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,1 +1,35 @@
-<p>recipes works!</p>
+<label for="">Search: </label>
+
+<input type="text" [(ngModel)] = "userChoice" placeholder="recipes">
+
+<button (click)="search()">search</button>
+
+<!-- recipes section -->
+<section>
+    <h1>Recipes</h1>
+
+
+    <!-- <div *ngIf="4 < 5" >ciao</div> -->
+
+    <!-- default recipes -->
+    <div class="card" *ngFor="let recipe of allVeganRecipes" ngIf="userRecipesSearched">
+        <img src="{{recipe.image}}" alt="cibo">
+        <p>{{recipe.title}}</p>
+    </div>
+    <!-- default recipes -->
+
+    <!-- query recipes -->
+    <div class="card" *ngFor="let recipe of userRecipesSearched" routerLink="/recipes-details/{{recipe.id}}">
+        <img src="{{recipe.image}}" alt="cibo">
+        <p>{{recipe.title}}</p>
+
+    </div>
+    <!-- query recipes -->
+
+    <button routerLink="recipes-details"> go</button>
+
+    <!-- [ngClass]="{hidden: userRecipesSearched}" -->
+
+    <!-- routerLink="/recipes-details/{{recipe.id}}" -->
+
+</section>
