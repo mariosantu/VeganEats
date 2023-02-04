@@ -1,14 +1,76 @@
-.def-card {
-        border: 1px solid black ;
-        width: 10%;
-        display: inline-block;
-        cursor: pointer;
+@import "../../styles/variables";
+// .def-card {
+//         border: 1px solid black ;
+//         width: 10%;
+//         display: inline-block;
+//         cursor: pointer;
     
-        img {
-            height: 50px;
-            width: auto;
+//         img {
+//             height: 50px;
+//             width: auto;
+//         }
+// }
+
+.search-bar-container {
+    width: 95%;
+    margin: auto;
+    padding: 50px;
+    padding-top: 53px;
+
+    h1 {
+        padding-top: 130px;
+        text-align: center;
+        width: 44%;
+        font-size: 58px;
+    }
+
+    span {
+        padding-right: 12px;
+    }
+
+    .title-color {
+        color: $primary-color;
+    }
+
+    .title-color-2 {
+        color: $third-color;
+    }
+
+    .search-spacing {
+
+        padding-left: 206px;
+        padding-top: 38px;
+
+        .search-bar {
+            // background-color: red;
+            outline: none;
+            border: none;
+            background-color: rgb(231, 231, 231);
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            padding: 7px 30px;
+            text-align: center;
         }
+    
+        .search-button {
+            background-color: rgb(231, 231, 231);
+            border: none;
+            outline: none;
+            padding: 7px 30px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            color: $primary-color;
+    
+            i {
+                cursor: pointer;
+            }
+        }
+    }
+
+    
+
 }
+
 
 .card {
     border: 1px solid black ;
@@ -26,4 +88,17 @@
 
 .hidden {
     display: none;
+}
+
+// recipe
+.recipes-container {
+    width: 95%;
+    margin: auto;
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        color: $third-color;
+        padding-top: 190px;
+    }
 }

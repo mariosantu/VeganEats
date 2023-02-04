@@ -1,12 +1,26 @@
-<label for="">Search: </label>
+<div class="search-bar-container">
 
-<input type="text" [(ngModel)] = "userChoice" placeholder="recipes">
+    <!-- search bar title -->
+    <h1>Stay healty and choose  <br> 
+        <span class="title-color">your</span>  
+        <span class="title-color-2">vegan</span> 
+        <span class="title-color">recipe</span>
+    </h1>
+    <!-- search bar title -->
 
-<button (click)="search()">search</button>
+    <div class="search-spacing">
+        <input class="search-bar" type="text" [(ngModel)] = "userChoice" placeholder="Search your vegan recipe">
+
+        <button class="search-button" (click)="search()">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+</div>
+
 
 <!-- recipes section -->
-<section>
-    <h1>Recipes</h1>
+<section class="recipes-container">
+    <h2>Recipes</h2>
 
 
     <!-- <div *ngIf="4 < 5" >ciao</div> -->
@@ -26,10 +40,11 @@
     </div>
     <!-- query recipes -->
 
-    <button routerLink="recipes-details"> go</button>
+    <!-- <button routerLink="recipes-details"> go</button> -->
 
     <!-- [ngClass]="{hidden: userRecipesSearched}" -->
 
     <!-- routerLink="/recipes-details/{{recipe.id}}" -->
 
 </section>
+
