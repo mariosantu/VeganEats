@@ -19,32 +19,41 @@
 
 
 <!-- recipes section -->
-<section class="recipes-container">
-    <h2>Recipes</h2>
-
-
-    <!-- <div *ngIf="4 < 5" >ciao</div> -->
-
-    <!-- default recipes -->
-    <div class="card" *ngFor="let recipe of allVeganRecipes" ngIf="userRecipesSearched">
-        <img src="{{recipe.image}}" alt="cibo">
-        <p>{{recipe.title}}</p>
+<section>
+    <div class="recipes-section-title">
+        <h2>Recipes</h2>
     </div>
-    <!-- default recipes -->
+
+
+
+    <div class="small-wrapper">
+        
+        <div class="card-container">
+
+             <!-- default recipes -->
+            <div class="card" *ngFor="let recipe of allVeganRecipes">
+                <div class="card-img">
+                    <img src="{{recipe.image}}" alt="cibo">
+                </div>
+
+                <div class="title">
+                    <p>{{recipe.title}}</p>
+                </div>
+            </div>
+            <!-- default recipes -->
+
+        </div>
+    
+    </div>
 
     <!-- query recipes -->
-    <div class="card" *ngFor="let recipe of userRecipesSearched" routerLink="/recipes-details/{{recipe.id}}">
+    <!-- <div class="card" *ngFor="let recipe of userRecipesSearched" routerLink="/recipes-details/{{recipe.id}}">
         <img src="{{recipe.image}}" alt="cibo">
         <p>{{recipe.title}}</p>
 
-    </div>
+    </div> -->
     <!-- query recipes -->
 
-    <!-- <button routerLink="recipes-details"> go</button> -->
-
-    <!-- [ngClass]="{hidden: userRecipesSearched}" -->
-
-    <!-- routerLink="/recipes-details/{{recipe.id}}" -->
 
 </section>
 

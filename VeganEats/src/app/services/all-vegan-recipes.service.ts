@@ -11,7 +11,7 @@ export class AllVeganRecipesService {
 
   // all vegan's recipes
   getAllVeganRecipes(): Observable<any> {
-    let url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=41e90c80c7dc42f9b55640488a030238&diet=vegan`;
+    let url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=41e90c80c7dc42f9b55640488a030238&diet=vegan&number=12`;
 
     return this._httpclient.get(url);
   }

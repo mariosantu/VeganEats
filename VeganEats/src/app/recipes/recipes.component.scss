@@ -72,33 +72,54 @@
 }
 
 
-.card {
-    border: 1px solid black ;
-    width: 10%;
-    display: inline-block;
-    cursor: pointer;
-
-
-    img {
-        height: 50px;
-        width: auto;
-    }
-}
-
-
 .hidden {
     display: none;
 }
 
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: $third-color;
+    padding-top: 190px;
+}
+
+
 // recipe
-.recipes-container {
-    width: 95%;
+
+.small-wrapper {
+    width: 80%;
     margin: auto;
 
-    h2 {
-        text-align: center;
-        font-size: 40px;
-        color: $third-color;
-        padding-top: 190px;
+    .card-container {
+        
+        padding: 60px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+
+        .card {
+            width: calc( ( 100% / 4 ) - 80px );
+            // text-align: center;
+            background-color: $fourth-color;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            
+
+            .title {
+                white-space:normal;
+            }
+
+            .card-img {
+
+                img {
+                    border-radius: 10px;
+                }
+            }
+        }
     }
 }
