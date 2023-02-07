@@ -1,18 +1,69 @@
 <app-header></app-header>
 
-<a routerLink="/">Home</a>
-<p>details</p>
+<section>
 
-<div>
-    <p>title = {{title}}</p>
-    <p>PreparationTime = {{preparationTime}}</p>
-    <p>pic = <img src="{{pic}}"></p>
-    <p [innerHTML]="sum"></p>
-    <p [innerHTML]="directives"></p>
+    <div class="recipe-details-container">
 
-    <p>ingridients = </p>
-    <div *ngFor="let ingridient of ingridients">
-        <p>{{ingridient.name}}</p>
+        <div class="details-title">
+            <h3>{{title}}</h3>
+        </div>
+        
+        <div class="deatils-container">
+    
+            <div class="details-img">
+                <img src="{{pic}}">
+            </div>
+    
+            <div class="details-infos">
+                
+                <p> 
+                    <i class="fas fa-clock"></i>
+                    Preparation Time:
+                    <span>{{preparationTime}}</span> 
+                </p>
+
+                <p>
+                    <i class="fas fa-pizza-slice"></i>
+                    Servings: <span>{{serving}}</span>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-wine-glass"></i>
+                    Wines: 
+                    <span class="comma">
+                        {{winesArray}}
+                    </span>
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="ingridients">
+            <h4>Ingridients </h4>
+            <!-- <p *ngFor="let ingridient of ingridients.toString()">
+                <span>{{ingridient.name}},</span>
+            </p> -->
+
+            <p>
+                <span class="comma">
+                    {{ingridientsArray}}
+                </span>
+            </p>
+        </div>
+    
+        <div class="summury">
+            <h4>Summury</h4>
+            <p [innerHTML]="sum"></p>
+        </div>
+
+        <div class="directives">
+            <h4>Directives</h4>
+            <p [innerHTML]="directives"></p>
+        </div>
+        
     </div>
-</div>
+    
+    
+</section>
+
 <app-footer></app-footer>

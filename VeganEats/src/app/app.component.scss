@@ -1,7 +1,22 @@
-// .background {
-//     background-position-x: 10px;
-//     background-position-y: -90px;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-image: url(../assets/img/back.png);
-// }
+.background {
+    background-position-y: -90px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/back.png);
+
+}
+
+
+
+// width: 68%;
+
+// padding-left: 665px;
+
+@media screen and (min-width: 1921px) {
+    .background {
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../assets/img/bg2.png);
+        background-position-y: -49px;
+    }
+}

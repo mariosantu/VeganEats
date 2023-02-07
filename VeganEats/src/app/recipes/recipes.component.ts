@@ -9,6 +9,7 @@ import { UserQueryResearchService } from '../services/user-query-research.servic
 })
 export class RecipesComponent implements OnInit {
 
+  isVisible = false;
   userChoice:string = '';
   allVeganRecipes?: any[];
   userRecipesSearched?: any[];
@@ -19,13 +20,13 @@ export class RecipesComponent implements OnInit {
     
     // all'avvio dell'applicazione il recipes component chiama il servizio _GetAllVeganRecipes e con la funzione getAllVeganRecipes
     // ritorna un oggetto json
-    // this._GetAllVeganRecipes.getAllVeganRecipes().subscribe(
-    //   data=>
-    //   {
-    //     this.allVeganRecipes = data.results;
-    //     // console.log(this.allVeganRecipes);
-    //   }
-    // )
+    this._GetAllVeganRecipes.getAllVeganRecipes().subscribe(
+      data=>
+      {
+        this.allVeganRecipes = data.results;
+        // console.log(this.allVeganRecipes);
+      }
+    )
 
     
   }
@@ -42,5 +43,7 @@ export class RecipesComponent implements OnInit {
         console.log(this.userRecipesSearched);
       }
     )
+
+    this.isVisible = true;
   }
 }

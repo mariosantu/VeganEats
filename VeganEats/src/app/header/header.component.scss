@@ -2,159 +2,273 @@
 
 
 header {
-    width: 95%;
-    margin: auto;
+    background: rgb(149,205,65);
+    background: linear-gradient(23deg, rgba(149,205,65,1) 42%, rgba(255,127,63,1) 55%);
 
-    p {
-        display: inline-block;
-        padding: 5px 5px;
-    }
-
-    .logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        // to delete
-        // background-color: $primary-color;
-
-        .logo-image {
+    .header-container {
+        width: 95%;
+        margin: auto;
+    
+        p {
+            display: inline-block;
+            padding: 5px 5px;
+        }
+    
+        .logo-container {
             display: flex;
             align-items: center;
-
-            h1 {
-
-                padding-left: 10px;
-
-                .veg {
-                    color: $primary-color;
-                }
-
-                .eats {
-                    color: $third-color;
+            justify-content: space-between;
+    
+            // to delete
+            // background-color: $primary-color;
+    
+            .logo-image {
+                display: flex;
+                align-items: center;
+    
+                h1 {
+    
+                    padding-left: 10px;
+    
+                    .veg {
+                        color: black;
+                    }
+    
+                    .eats {
+                        color: $primary-color;
+                    }
                 }
             }
-        }
-
-        embed {
-            height: 90px;
-            width: auto;
-        }
-
-
-        .links-container {
-
-            padding-right: 290px;
-             
-            ul {
-                list-style-type: none;
-
-                li {
-                    display: inline-block;
-                    padding: 5px 5px;
-
-                    a {
-                        text-decoration: none;
-                        color: $primary-color;
-                        border-bottom: 3px solid $primary-color;
-                        font-size: 20px;
-                        font-weight: bold;
-
-                        i {
-                            font-size: 22px;
+    
+            embed {
+                height: 80px;
+                width: auto;
+            }
+    
+    
+            .links-container {
+    
+                padding-right: 290px;
+                 
+                ul {
+                    list-style-type: none;
+    
+                    li {
+                        display: inline-block;
+                        padding: 5px 5px;
+    
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            border-bottom: 3px solid $primary-color;
+                            font-size: 20px;
+                            font-weight: bold;
+    
+                            i {
+                                font-size: 22px;
+                            }
                         }
                     }
                 }
             }
-        }
-
-        .burger-menu-container {
-
-            i {
-                // to transform in mobile
-                display: none;
-                cursor: pointer;
-                color: $primary-color;
-
+    
+            .burger-menu-container {
+    
+                i {
+                    // to transform in mobile
+                    // display: none;
+                    cursor: pointer;
+                    color: black;
+    
+                }
             }
         }
     }
 }
 
-// search bar section 
-// .def-card {
-//         border: 1px solid black ;
-//         width: 10%;
-//         display: inline-block;
-//         cursor: pointer;
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    header {
+        padding: 20px 20px;
+        background: rgb(149,205,65);
+        background: linear-gradient(23deg, rgba(149,205,65,1) 42%, rgba(255,127,63,1) 55%);
+        
     
-//         img {
-//             height: 50px;
-//             width: auto;
-//         }
-// }
+        .header-container {
+            width: 95%;
+            margin: auto;
+        
+            p {
+                display: inline-block;
+                padding: 5px 5px;
+            }
+        
+            .logo-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        
+                // to delete
+                // background-color: $primary-color;
+        
+                .logo-image {
+                    display: flex;
+                    align-items: center;
+        
+                    h1 {
+                        font-size: 33px;
+                        padding-left: 10px;
+        
+                        .veg {
+                            color: black;
+                        }
+        
+                        .eats {
+                            color: $primary-color;
+                        }
+                    }
 
-.search-bar-container {
-    width: 95%;
-    margin: auto;
-    padding: 50px;
-    padding-top: 53px;
+                    embed {
+                        height: 52px;
+                        width: auto;
+                    }
+                }
+        
+               
+        
+        
+                .links-container {
 
-    h1 {
-        padding-top: 130px;
-        text-align: center;
-        width: 44%;
-        font-size: 58px;
-    }
-
-    span {
-        padding-right: 12px;
-    }
-
-    .title-color {
-        color: $primary-color;
-    }
-
-    .title-color-2 {
-        color: $third-color;
-    }
-
-    .search-spacing {
-
-        padding-left: 206px;
-        padding-top: 38px;
-
-        .search-bar {
-            // background-color: red;
-            outline: none;
-            border: none;
-            background-color: rgb(231, 231, 231);
-            border-bottom-left-radius: 5px;
-            border-top-left-radius: 5px;
-            padding: 7px 30px;
-            text-align: center;
+                    padding-right: 139px;
+                     
+                    ul {
+                        list-style-type: none;
+        
+                        li {
+                            display: inline-block;
+                            padding: 5px 5px;
+        
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                border-bottom: 3px solid $primary-color;
+                                font-size: 20px;
+                                font-weight: bold;
+        
+                                i {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+                .burger-menu-container {
+        
+                    i {
+                        // to transform in mobile
+                        // display: none;
+                        cursor: pointer;
+                        color: black;
+        
+                    }
+                }
+            }
         }
+    }
     
-        .search-button {
-            background-color: rgb(231, 231, 231);
-            border: none;
-            outline: none;
-            padding: 7px 30px;
-            border-bottom-right-radius: 5px;
-            border-top-right-radius: 5px;
-            color: $primary-color;
+}
+
+// iphone
+@media screen and (max-width: 896px) {
+
+    header {
+        background: rgb(149,205,65);
+        background: linear-gradient(23deg, rgba(149,205,65,1) 42%, rgba(255,127,63,1) 55%);
     
-            i {
-                cursor: pointer;
+        .header-container {
+            width: 95%;
+            margin: auto;
+        
+            p {
+                display: inline-block;
+                padding: 5px 5px;
+            }
+        
+            .logo-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        
+                // to delete
+                // background-color: $primary-color;
+        
+                .logo-image {
+                    display: flex;
+                    align-items: center;
+        
+                    h1 {
+        
+                        font-size: 25px;
+                        padding-left: 10px;
+        
+                        .veg {
+                            color: black;
+                        }
+        
+                        .eats {
+                            color: $primary-color;
+                        }
+                    }
+                }
+        
+                embed {
+                    height: 30px;
+                    width: auto;
+                }
+        
+        
+                .links-container {
+
+                    display: none;
+                    padding: 0;
+                    // padding-right: 139px;
+                     
+                    ul {
+                        list-style-type: none;
+        
+                        li {
+                            display: inline-block;
+                            padding: 5px 5px;
+        
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                border-bottom: 3px solid $primary-color;
+                                font-size: 20px;
+                                font-weight: bold;
+        
+                                i {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+                .burger-menu-container {
+        
+                    i {
+                        // to transform in mobile
+                        // display: none;
+                        cursor: pointer;
+                        color: black;
+        
+                    }
+                }
             }
         }
     }
 
-    
-
-}
-
-
-.hidden {
-    display: none;
 }

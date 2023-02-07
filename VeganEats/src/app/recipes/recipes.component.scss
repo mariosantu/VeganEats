@@ -14,60 +14,65 @@
 .search-bar-container {
     width: 95%;
     margin: auto;
-    padding: 50px;
-    padding-top: 53px;
+    padding-top: 90px;
+    padding-left: 195px;
 
-    h1 {
-        padding-top: 130px;
-        text-align: center;
-        width: 44%;
-        font-size: 58px;
-    }
+    .slogan {
 
-    span {
-        padding-right: 12px;
-    }
-
-    .title-color {
-        color: $primary-color;
-    }
-
-    .title-color-2 {
-        color: $third-color;
-    }
-
-    .search-spacing {
-
-        padding-left: 206px;
-        padding-top: 38px;
-
-        .search-bar {
-            // background-color: red;
-            outline: none;
-            border: none;
-            background-color: rgb(231, 231, 231);
-            border-bottom-left-radius: 5px;
-            border-top-left-radius: 5px;
-            padding: 7px 30px;
-            text-align: center;
+        h1 {
+            padding-top: 130px;
+            // text-align: center;
+            // width: 44%;
+            font-size: 58px;
         }
     
-        .search-button {
-            background-color: rgb(231, 231, 231);
-            border: none;
-            outline: none;
-            padding: 7px 30px;
-            border-bottom-right-radius: 5px;
-            border-top-right-radius: 5px;
+        span {
+            padding-right: 12px;
+        }
+    
+        .title-color {
             color: $primary-color;
-    
-            i {
-                cursor: pointer;
-            }
         }
-    }
-
     
+        .title-color-2 {
+            color: $third-color;
+        }
+    
+    
+        .input-container {
+            padding-top: 33px;
+        }
+        // .search-spacing {
+    
+        //     padding-left: 206px;
+        //     padding-top: 38px;
+    
+            .search-bar {
+                // background-color: red;
+                outline: none;
+                border: none;
+                background-color: rgb(231, 231, 231);
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+                padding: 7px 30px;
+                text-align: center;
+            }
+        
+            .search-button {
+                background-color: rgb(231, 231, 231);
+                border: none;
+                outline: none;
+                padding: 7px 30px;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+                color: $primary-color;
+        
+                i {
+                    cursor: pointer;
+                }
+            }
+        // }
+    }
 
 }
 
@@ -118,6 +123,239 @@ h2 {
 
                 img {
                     border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1921px) {
+    .search-bar-container  {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .search-bar-container {
+        width: 100%;
+        margin: none;
+        padding-top: 0px;
+        padding-left: 0px;
+    
+        .slogan {
+            text-align: center;
+
+            h1 {
+                // padding-top: 130px;
+                // text-align: center;
+                // width: 44%;
+                font-size: 58px;
+            }
+        
+            span {
+                padding-right: 12px;
+            }
+        
+            .title-color {
+                color: $primary-color;
+            }
+        
+            .title-color-2 {
+                color: $third-color;
+            }
+        
+        
+            .input-container {
+                padding-top: 33px;
+            }
+            // .search-spacing {
+        
+            //     padding-left: 206px;
+            //     padding-top: 38px;
+        
+                .search-bar {
+                    // background-color: red;
+                    outline: none;
+                    border: none;
+                    background-color: rgb(231, 231, 231);
+                    border-bottom-left-radius: 5px;
+                    border-top-left-radius: 5px;
+                    padding: 7px 30px;
+                    text-align: center;
+                }
+            
+                .search-button {
+                    background-color: rgb(231, 231, 231);
+                    border: none;
+                    outline: none;
+                    padding: 7px 30px;
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                    color: $primary-color;
+            
+                    i {
+                        cursor: pointer;
+                    }
+                }
+            // }
+        }
+    
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        color: $third-color;
+        padding-top: 70px;
+    }
+
+    .small-wrapper {
+        width: 80%;
+        margin: auto;
+    
+        .card-container {
+            
+            padding: 60px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+    
+            .card {
+                width: calc( ( 100% / 2 ) - 60px );
+                // text-align: center;
+                background-color: $fourth-color;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 0 20px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                
+    
+                .title {
+                    white-space:normal;
+                }
+    
+                .card-img {
+    
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// iphone
+@media screen and (max-width: 767px) {
+    .search-bar-container {
+        width: 100%;
+        margin: none;
+        padding-top: 0px;
+        padding-left: 0px;
+    
+        .slogan {
+            text-align: center;
+
+            h1 {
+                // padding-top: 130px;
+                // text-align: center;
+                // width: 44%;
+                padding-top: 80px;
+                font-size: 30px;
+            }
+        
+            span {
+                padding-right: 12px;
+            }
+        
+            .title-color {
+                color: $primary-color;
+            }
+        
+            .title-color-2 {
+                color: $third-color;
+            }
+        
+        
+            .input-container {
+                padding-top: 33px;
+            }
+            // .search-spacing {
+        
+            //     padding-left: 206px;
+            //     padding-top: 38px;
+        
+                .search-bar {
+                    // background-color: red;
+                    outline: none;
+                    border: none;
+                    background-color: rgb(231, 231, 231);
+                    border-bottom-left-radius: 5px;
+                    border-top-left-radius: 5px;
+                    padding: 7px 30px;
+                    text-align: center;
+                }
+            
+                .search-button {
+                    background-color: rgb(231, 231, 231);
+                    border: none;
+                    outline: none;
+                    padding: 7px 30px;
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                    color: $primary-color;
+            
+                    i {
+                        cursor: pointer;
+                    }
+                }
+            // }
+        }
+    
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 25px;
+        color: $third-color;
+        padding-top: 70px;
+    }
+
+    .small-wrapper {
+        width: 80%;
+        margin: auto;
+    
+        .card-container {
+            
+            padding: 30px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+    
+            .card {
+                width: calc( ( 100% / 1 ) - 60px );
+                // text-align: center;
+                background-color: $fourth-color;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 0 20px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                
+    
+                .title {
+                    white-space:normal;
+                }
+    
+                .card-img {
+    
+                    img {
+                        border-radius: 10px;
+                    }
                 }
             }
         }

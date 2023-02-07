@@ -19,6 +19,10 @@ export class RecipesDetailsComponent {
   sum?:any;
   directives?:any;
   ingridients?:any;
+  serving?:any;
+  winesArray?:any;
+
+  ingridientsArray?:any;
 
   constructor(private route :ActivatedRoute, private _RecipesIngredientsByIdService: RecipesIngredientsByIdService) {}
 
@@ -38,9 +42,18 @@ export class RecipesDetailsComponent {
         this.sum = this.recipeDetails.summary;
         this.directives = this.recipeDetails.instructions;
 
+        this.serving = this.recipeDetails.servings;
+        this.winesArray = this.recipeDetails.winePairing.pairedWines.toString();
         this.ingridients = this.recipeDetails.extendedIngredients;
+
+        this.ingridientsArray = this.ingridients.map(function(item:any) {
+          return item['name'];
+        });
+
       }
     );
+
+    
 
     // console.log(this.recipeDetails.title);
 

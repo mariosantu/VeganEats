@@ -1,20 +1,28 @@
 <div class="search-bar-container">
 
-    <!-- search bar title -->
-    <h1>Stay healty and choose  <br> 
-        <span class="title-color">your</span>  
-        <span class="title-color-2">vegan</span> 
-        <span class="title-color">recipe</span>
-    </h1>
-    <!-- search bar title -->
+        <!-- search bar title -->
+        <div class="slogan">
+            <h1>Stay healty and choose  <br> 
+                <span class="title-color">your</span>  
+                <span class="title-color-2">vegan</span> 
+                <span class="title-color">recipe</span>
+            </h1>
 
-    <div class="search-spacing">
-        <input class="search-bar" type="text" [(ngModel)] = "userChoice" placeholder="Search your vegan recipe">
+            <!-- input section -->
+            <div class="input-container">
+                <input class="search-bar" type="text" [(ngModel)] = "userChoice" placeholder="Search your vegan recipe">
 
-        <button class="search-button" (click)="search()">
-            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-        </button>
-    </div>
+                <button class="search-button" (click)="search()">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            
+            <!-- input section -->
+        </div>
+        <!-- search bar title -->
+
+        
+
 </div>
 
 
@@ -31,7 +39,7 @@
         <div class="card-container">
 
              <!-- default recipes -->
-            <div class="card" *ngFor="let recipe of allVeganRecipes">
+            <div class="card" *ngFor="let recipe of allVeganRecipes" [ngClass]="{'hidden' : isVisible}" routerLink="/recipes-details/{{recipe.id}}">
                 <div class="card-img">
                     <img src="{{recipe.image}}" alt="cibo">
                 </div>
@@ -42,17 +50,20 @@
             </div>
             <!-- default recipes -->
 
+             <!-- query recipes -->
+            <div class="card" *ngFor="let recipe of userRecipesSearched" routerLink="/recipes-details/{{recipe.id}}">
+                <img src="{{recipe.image}}" alt="cibo">
+                <p>{{recipe.title}}</p>
+
+            </div>
+            <!-- query recipes -->
+
+
         </div>
     
     </div>
 
-    <!-- query recipes -->
-    <!-- <div class="card" *ngFor="let recipe of userRecipesSearched" routerLink="/recipes-details/{{recipe.id}}">
-        <img src="{{recipe.image}}" alt="cibo">
-        <p>{{recipe.title}}</p>
-
-    </div> -->
-    <!-- query recipes -->
+   
 
 
 </section>
