@@ -34,8 +34,10 @@ export class RecipesComponent implements OnInit {
   
 
   search() {
-    // alert(this.userChoice);
-
+    
+    //una volta che l'utente ha inserito la ricetta da cercare search() chiama il 
+    // servizio _GetUserQueryRecipes e con getRecipesByUserQuery() ritorna un json
+    // contenente tutte le info trovate in userRecipesSearched
     this._GetUserQueryRecipes.getRecipesByUserQuery(this.userChoice).subscribe(
       data=>
       {

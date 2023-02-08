@@ -1,15 +1,5 @@
 @import "../../styles/variables";
-// .def-card {
-//         border: 1px solid black ;
-//         width: 10%;
-//         display: inline-block;
-//         cursor: pointer;
-    
-//         img {
-//             height: 50px;
-//             width: auto;
-//         }
-// }
+
 
 .search-bar-container {
     width: 95%;
@@ -42,13 +32,8 @@
         .input-container {
             padding-top: 33px;
         }
-        // .search-spacing {
-    
-        //     padding-left: 206px;
-        //     padding-top: 38px;
-    
+       
             .search-bar {
-                // background-color: red;
                 outline: none;
                 border: none;
                 background-color: rgb(231, 231, 231);
@@ -71,7 +56,6 @@
                     cursor: pointer;
                 }
             }
-        // }
     }
 
 }
@@ -130,6 +114,7 @@ h2 {
 }
 
 
+// media query
 @media screen and (min-width: 1921px) {
     .search-bar-container  {
         width: 70%;
@@ -147,9 +132,6 @@ h2 {
             text-align: center;
 
             h1 {
-                // padding-top: 130px;
-                // text-align: center;
-                // width: 44%;
                 font-size: 58px;
             }
         
@@ -169,13 +151,8 @@ h2 {
             .input-container {
                 padding-top: 33px;
             }
-            // .search-spacing {
-        
-            //     padding-left: 206px;
-            //     padding-top: 38px;
         
                 .search-bar {
-                    // background-color: red;
                     outline: none;
                     border: none;
                     background-color: rgb(231, 231, 231);
@@ -198,7 +175,6 @@ h2 {
                         cursor: pointer;
                     }
                 }
-            // }
         }
     
     }
@@ -224,7 +200,6 @@ h2 {
     
             .card {
                 width: calc( ( 100% / 2 ) - 60px );
-                // text-align: center;
                 background-color: $fourth-color;
                 border-radius: 10px;
                 padding: 20px;
@@ -260,9 +235,6 @@ h2 {
             text-align: center;
 
             h1 {
-                // padding-top: 130px;
-                // text-align: center;
-                // width: 44%;
                 padding-top: 80px;
                 font-size: 30px;
             }
@@ -283,13 +255,8 @@ h2 {
             .input-container {
                 padding-top: 33px;
             }
-            // .search-spacing {
-        
-            //     padding-left: 206px;
-            //     padding-top: 38px;
         
                 .search-bar {
-                    // background-color: red;
                     outline: none;
                     border: none;
                     background-color: rgb(231, 231, 231);
@@ -312,7 +279,6 @@ h2 {
                         cursor: pointer;
                     }
                 }
-            // }
         }
     
     }
@@ -338,7 +304,6 @@ h2 {
     
             .card {
                 width: calc( ( 100% / 1 ) - 60px );
-                // text-align: center;
                 background-color: $fourth-color;
                 border-radius: 10px;
                 padding: 20px;

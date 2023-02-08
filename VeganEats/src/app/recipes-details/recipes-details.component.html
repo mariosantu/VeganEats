@@ -2,12 +2,16 @@
 
 <section>
 
+    <!-- recipes details container -->
     <div class="recipe-details-container">
 
+        <!-- title -->
         <div class="details-title">
             <h3>{{title}}</h3>
         </div>
-        
+        <!-- title -->
+
+        <!-- info container -->
         <div class="deatils-container">
     
             <div class="details-img">
@@ -37,7 +41,10 @@
                 
             </div>
         </div>
+        <!-- info container -->
 
+
+        <!-- ingridient -->
         <div class="ingridients">
             <h4>Ingridients </h4>
             <!-- <p *ngFor="let ingridient of ingridients.toString()">
@@ -50,18 +57,25 @@
                 </span>
             </p>
         </div>
+        <!-- ingridient -->
     
+        <!-- summury -->
         <div class="summury">
             <h4>Summury</h4>
             <p [innerHTML]="sum"></p>
         </div>
+        <!-- summury -->
 
+        <!-- directives -->
         <div class="directives">
             <h4>Directives</h4>
             <p [innerHTML]="directives"></p>
         </div>
+        <!-- directives -->
         
     </div>
+    <!-- recipes details container -->
+
     
     
 </section>

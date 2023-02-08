@@ -75,8 +75,7 @@ header {
             .burger-menu-container {
     
                 i {
-                    // to transform in mobile
-                    // display: none;
+                    display: none;
                     cursor: pointer;
                     color: black;
     
@@ -86,6 +85,7 @@ header {
     }
 }
 
+// mediaquery
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -167,8 +167,7 @@ header {
                 .burger-menu-container {
         
                     i {
-                        // to transform in mobile
-                        // display: none;
+                        display: none;
                         cursor: pointer;
                         color: black;
         
@@ -261,7 +260,7 @@ header {
         
                     i {
                         // to transform in mobile
-                        // display: none;
+                        display: block;
                         cursor: pointer;
                         color: black;
         

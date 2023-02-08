@@ -9,10 +9,8 @@ import { RecipesIngredientsByIdService } from '../services/recipes-ingredients-b
 })
 export class RecipesDetailsComponent {
 
-  // recipeId?:any;
-  recipeDetails?: any;
-
   // recipe's data
+  recipeDetails?: any;
   title?:any;
   preparationTime?:any;
   pic?:any;
@@ -21,12 +19,17 @@ export class RecipesDetailsComponent {
   ingridients?:any;
   serving?:any;
   winesArray?:any;
-
   ingridientsArray?:any;
 
   constructor(private route :ActivatedRoute, private _RecipesIngredientsByIdService: RecipesIngredientsByIdService) {}
 
   ngOnInit(): void {
+
+    // Una volta scelta una ricetta dall'utente si viene indirizzati alla pagina di dettaglio
+    // ovvero recipe-details dove per prima cosa viene registrto l'id grazie alla funzione
+    // getRecipeId e dopodichè grazie al servizio _RecipesIngredientsByIdService e alla relativa
+    // funzione getRecipesDetails vengono registrati tutti i dati necessari per la crezione della
+    // pagina di dettaglio
 
     const id = this.getRecipeId();
 
@@ -35,17 +38,16 @@ export class RecipesDetailsComponent {
         this.recipeDetails = data;
         // console.log(this.recipeDetails);
 
+
         // recipe's data
         this.title = this.recipeDetails.title;
         this.preparationTime = this.recipeDetails.readyInMinutes;
         this.pic = this.recipeDetails.image;
         this.sum = this.recipeDetails.summary;
         this.directives = this.recipeDetails.instructions;
-
         this.serving = this.recipeDetails.servings;
         this.winesArray = this.recipeDetails.winePairing.pairedWines.toString();
         this.ingridients = this.recipeDetails.extendedIngredients;
-
         this.ingridientsArray = this.ingridients.map(function(item:any) {
           return item['name'];
         });
@@ -53,12 +55,10 @@ export class RecipesDetailsComponent {
       }
     );
 
-    
-
-    // console.log(this.recipeDetails.title);
-
   }
 
+  // questa funzione si occupa di registrare l'id del 
+  // lavoro selezionato dall'utente attraverso il routing
   getRecipeId(): number {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     return id;
